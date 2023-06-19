@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    line-height: 1.3;
+
+}
+body{
+    margin: 0px;
+}
+
+.header-inner{
+    height: 80px;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-docplanner{
+    position: absolute;
+    height: 80px;
+    width: 264px;
+    z-index: 1; 
+}
+
+#logo{
+    position: relative;
+    cursor: pointer;
+}
+
+.main-nav{
+    height: 80px;
+    position: relative;
+}
+
+.main-menu{
+    height: 80px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+
+.aboutus-link:hover, .career-link:hover{
+    color: aqua;
+}
+.main-menu a{
+    text-decoration: none;
+}
+
+.dropdown{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.departments-menu{
+    position: relative;
+    
+}
+
+.dropdown button{
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+.dropdown button:hover{
+    color: aqua;
+}
+
+.departments-menu ul{
+    position: fixed;
+    border-radius: 5px;
+    margin-left: -70px;
+    margin-top: 10px;
+    width: 250px;
+    height: 200px;
+    padding: 10px 10px 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+    list-style: none;
+    background: white;
+    box-shadow: 0px 6px 6px 6px lightgray;
+    display: none;
+}
+
+.departments-menu a:hover{
+    color: #00b39b;
+    background: lightgrey;
+}
+
+.departments-menu a{
+    color: #747474;
+    
+}
+.dropdown:hover .departments-menu ul{ 
+    display: flex;
+    position: fixed;
+}
+
+.healthcare{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-healthcare{
+   margin: 10px auto;
+}
+
+.healthcare h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 30px;
+    line-height: 1.3;
+    color: #00b39b;
+}
+
+.grid{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    max-width: 1015px;
+    flex: 1;
+}
+
+.col-1, .col-2{
+    padding: 10px;
+}
+
+.col-1 p, .col-2 p{
+    line-height: 1.5;
+    color: #747474;
+}
+
+.service-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-inner{
+   max-width: 1015px;
+   height: 50vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.card-patients{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #00ccb1;
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    height: 345px;
+    padding: 2rem 2rem ;
+    margin: 10px;
+}
+
+.card-doctors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #3d83df;
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    height: 345px;
+    padding: 2rem 2rem ;
+    margin: 10px;
+}
+
+.card-clinics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1b2734;
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    height: 345px;
+    padding: 2rem 2rem ;
+    margin: 10px;
+}
+
+.card-details p{
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.card-details h2{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.country-options{
+    background: transparent;
+    color: white;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px; 
+}
+
+.country-options option{
+    color: black;
+}
+
+.brands{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+.brand-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1015px;
+}
+
+.brands-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 67%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+
+.brand-content h1{
+    color: #00b39b;
+    width: 33%;
+    letter-spacing: 1px;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#DAF7F7;  
+    padding: 1.875em 0 .625em;
+    margin: 0 -180px;
+    height: 80vh;
+}
+
+.stats-grid{
+  display: flex;
+
+}
+.right-col{
+    display: flex; 
+}
+
+.stats-header{
+    display: flex;
+    margin-top: 2em;
+}
+
+.stats-header-description{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.stats-header-description h1{
+    max-width: 415px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #00b39b; 
+}
+
+.stats-header-description p{
+    max-width: 415px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #747474;
+    margin: 1.6em 0;
+}
+
+.stats-logo{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: bottom left;
+    position: relative;
+}
+
+.stats-items-card{
+    width: 220px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.stats-details{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.stats-details h3{
+    color: #00b39b;
+    margin: 1rem;   
+}
+
+.stats-details p{
+    color: #747474;
+    font-size: 13px;
+}
+
+.offices-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header-office{
+    max-width: 460px;
+    margin: 0 auto 4.1875rem;
+    font-size: .875em;
+    text-align: center;
+}
+
+.header-office h1{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #00b39b;
+}
+
+.header-office p{
+    max-width: 415px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #747474;
+    margin: 1.6em;
+}
+
+.office-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: left;
+}
+
+.office{
+    width: 33.33%;
+    padding: 10px;  
+}
+
+.office__inner {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+    z-index: 2;
+    position: relative;
+    display: block;
+    color: #747474;
+    transition: .2s all;
+    transform: translateX(0px)
+    
+    
+}
+.office__inner:hover{
+    box-shadow:  10px 10px 10px #00b39b;
+    transform: translateX(-10px);
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+.office .btn {
+    float: right;
+}
+
+.office__desc {
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 1em;
+}
+
+.btn--small {
+    font-size: .625rem;
+    padding: 1em 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1em;
+    background: #3d83df;
+    font-family: "Roboto",Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.join-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    max-width: 520px;
+    margin: 0 auto; 
+}
+
+.join-us h1{
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    border-top: 1px solid #eef2f2;
+}
+ 
